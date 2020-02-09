@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  height: 50px;
+  background: #dedede;
+}
+
+.main {
+  display: flex;
+  .side-bar-container {
+    width: 100px;
+    background: #ccc;
+  }
+
+  .content-container {
+    flex: 1;
+    background: #efefef;
+  }
+}
