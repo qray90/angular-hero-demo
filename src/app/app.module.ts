@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SyntaxLearningComponent } from './syntaxLearning/syntaxLearning.component';
@@ -10,6 +11,7 @@ import { SyntaxLearningComponent } from './syntaxLearning/syntaxLearning.compone
     SyntaxLearningComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [],

@@ -88,4 +88,9 @@ title = "this is app";
 <button (click)="clickButton($event, 123)">点击弹出弹框</button>
 ```
 
+# 7. 双向数据绑定
+双向数据绑定简写:
+```html
+<input [(ngModel)]="inputData">
+```
 
