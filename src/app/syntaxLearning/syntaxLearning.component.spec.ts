@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BindingComponent } from './binding.component';
+import { SyntaxLearningComponent } from './syntaxLearning.component';
 
 describe('BindingComponent', () => {
-  let component: BindingComponent;
-  let fixture: ComponentFixture<BindingComponent>;
+  let component: SyntaxLearningComponent;
+  let fixture: ComponentFixture<SyntaxLearningComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BindingComponent ]
+      declarations: [ SyntaxLearningComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BindingComponent);
+    fixture = TestBed.createComponent(SyntaxLearningComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
