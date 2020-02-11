@@ -18,6 +18,8 @@ export class SyntaxLearningComponent implements OnInit {
 
   ngIfCondition = true;
 
+  ngSwitchCondition = 0;
+
   constructor() { }
 
   ngOnInit(): void {
