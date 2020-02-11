@@ -12,6 +12,8 @@ export class SyntaxLearningComponent implements OnInit {
   id = 'property';
   pTitle = 'property';
 
+  fruits = ['苹果', '香蕉', '桃子', '西瓜'];
+
   constructor() { }
 
   ngOnInit(): void {

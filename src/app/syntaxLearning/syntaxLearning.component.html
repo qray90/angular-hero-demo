@@ -4,3 +4,11 @@
 
 <h3>2. property binding</h3>
 <div [id]="id" [title]="pTitle"> using [ ] binding property</div>
+
+<h3>3. ngFor </h3>
+<ul>
+  <li *ngFor="let fruit of fruits; let i = index">
+    {{ i }} -- {{ fruit }}
+  </li>
+</ul>
+
