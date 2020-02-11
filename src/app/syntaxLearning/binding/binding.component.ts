@@ -9,6 +9,9 @@ export class BindingComponent implements OnInit {
   html = '<div>bound by [innerHTML] </div>';
   html2 = '<div>bound by {{ }} </div>';
 
+  id = 'property';
+  pTitle = 'property';
+
   constructor() { }
 
   ngOnInit(): void {
