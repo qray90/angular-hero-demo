@@ -3,12 +3,32 @@
 <div [innerHTML]="html"></div>
 
 <h3>2. property binding</h3>
-<div [id]="id" [title]="pTitle"> using [ ] binding property</div>
+<div [id]="id" [title]="pTitle">using [ ] binding property</div>
 
-<h3>3. ngFor </h3>
+<h3>3. ngFor</h3>
 <ul>
-  <li *ngFor="let fruit of fruits; let i = index">
-    {{ i }} -- {{ fruit }}
-  </li>
+  <li *ngFor="let fruit of fruits; let i = index">{{ i }} -- {{ fruit }}</li>
 </ul>
 
+<h3>4. ngIf</h3>
+<h5>ngIf</h5>
+<div *ngIf="ngIfCondition"> 显示或这不显示 </div>
+
+<h5>ngIf then</h5>
+<div *ngIf="ngIfCondition; then thenContent1;">
+  then 和 ngIf 同时存在会忽略这里，显示then
+</div>
+<ng-template #thenContent1> 在then这里显示出来 </ng-template>
+
+<h5>ngIf else</h5>
+<div *ngIf="ngIfCondition; else elseContent1">
+  条件真显示
+</div>
+<ng-template #elseContent1> 条件假显示 </ng-template>
+
+<h5>ngIf then else</h5>
+<div *ngIf="ngIfCondition; then content else other_content">
+  这里会被忽略
+</div>
+<ng-template #content>条件真显示111</ng-template>
+<ng-template #other_content>条件假显示111</ng-template>

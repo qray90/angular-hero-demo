@@ -14,6 +14,10 @@ export class SyntaxLearningComponent implements OnInit {
 
   fruits = ['苹果', '香蕉', '桃子', '西瓜'];
 
+  fruit = '苹果';
+
+  ngIfCondition = true;
+
   constructor() { }
 
   ngOnInit(): void {
