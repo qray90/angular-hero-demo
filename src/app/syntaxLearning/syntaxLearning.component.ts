@@ -25,4 +25,8 @@ export class SyntaxLearningComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clickButton(e, value) {
+    alert('hello, angular!');
+  }
+
 }

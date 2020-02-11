@@ -81,3 +81,11 @@ title = "this is app";
   <li *ngSwitchDefault>无效</li>
 </ul>
 ```
+
+# 6. event
+绑定事件用小括号，`( )`
+```html
+<button (click)="clickButton($event, 123)">点击弹出弹框</button>
+```
+
+
